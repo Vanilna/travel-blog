@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+	font-size: 10px;
+}
+/*----------------------------------Logo---------------------------*/
+header {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+header .row {
+	background-color: white;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#logo {
+	width: 20%;
+	max-width: 350px;
+	height: auto;
+	display: inline;
+	float: left;
+	padding: 0.5%;
+}
+/*----------------------------------Logo---------------------------*/
+
+
+/*----------------------------------NAVBAR-------------------------*/
+
+#navBar {
+	width: 100%;
+	list-style-type: none; 
+	background-color: #0AA30F;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	position: relative;
+	bottom: 0;
+}
+
+nav li {
+	display: inline-block; /*to make nav battons ran in a line*/
+	position: relative;
+	bottom: 0;
+	vertical-align: middle;
+}
+
+nav a, .dropbtn {
+	display: inline-block;/*to make nav battons ran in a line but add to them padding*/
+	text-decoration: none;
+	padding: 0.7rem 1.6rem;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.4rem;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+	background-color: #323832;
+	color: #fff;
+}
+
+li.dropdown {
+    display: inline-block; /*to fix dropdown under corect button*/
+}
+
+.dropdown_content {
+    display: none; /*to make it visible only on hover*/
+    position: absolute;/*to place dropdown under and not incide a button*/
+	box-shadow: 0rem 0.8rem 1.4rem 0rem rgba(0,0,0,0.2);
+	z-index: 1; /*to show it on top of the rest of the page*/
+}
+
+.dropdown_content a {
+    color: #000;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    display: block;/*to display dropdown vertical*/
+    text-align: left;
+	font-size: 1.2rem;
+	background-color: #fff;
+	width: 170%;
+}
+
+.dropdown_content a:hover {
+	background-color: #f1f1f1;
+	color: #000;
+	}
+
+.dropdown:hover .dropdown_content {
+    display: block; /*to make it visible only on hover*/
+}
+
+#lang a {
+	padding: 0.5rem 0.4rem;
+}
+
+#lang a:first-child {
+	margin-left: 2rem;
+}
+
+#lang a:last-child {
+	margin-right: 2rem;
+}
+nav img {
+	display: inline-block;
+}
+
+/*----------------------------------NAVBAR-------------------------*/
+
+
+/*----------------------------------MAIN---------------------------*/
+main {
+	width: 65%;
+	padding: 0px 15px;
+	float: left;
+	z-index: 0;
+}
+
+.row {
+	padding: 0 1%;
+	margin-top: 2%
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: #323832;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	padding: 0.5rem 0rem;
+	font-family: 'Raleway', sans-serif;
+	color: #323832;
+}
+
+main img {
+	max-width: 800px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+hr {
+	color: #0AA30F;
+	margin: 1.6rem 0rem;
+}
+
+.article {
+	margin: 0rem 2rem 7rem 2rem;
+}
+
+.article img {
+	object-fit: cover;
+	height: 350px;
+}
+
+.button {
+	float: right;
+	display: block;
+}
+
+.button a {
+	text-decoration: none;
+    color: #fff;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.button p {
+	background-color: #0AA30F;
+	margin: 0px;
+	padding: 1rem;
+}
+
+
+/*----------------------------------MAIN---------------------------*/
+
+
+/*----------------------------------ASIDE--------------------------*/
+aside {
+	width: 35%;
+	float: left;
+	padding: 0px 15px;
+}
+
+img {
+	width: 100%;
+}
+
+aside p {
+	padding: 1rem 1.5rem;
+	text-align: center;
+}
+
+aside img {
+	padding-right: 30px;
+}
+
+#authors, #recomended, #partners {
+	margin: 0px 20px 50px 20px;
+}
+
+#authors {
+	margin-top: 0;
+}
+
+#authors .social_bar a:link, #authors .social_bar a:visited {
+	color: #323832;
+}
+
+#authors #facebook:hover, #authors #facebook:active {
+	color: #337ab7;
+	border: none;
+}
+
+#authors #instagram:hover, #authors #instagram:active {
+	color: #DA4453;
+	border: none;
+}
+
+#authors #twitter:hover, #authors #twitter:active {
+	color: #1dcaff;
+	border: none;
+}
+
+/*----------------------------------ASIDE--------------------------*/
+
+
+/*----------------------------------FOOTER-------------------------*/
+footer {
+	background-color: #323832;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	overflow: hidden;
+	margin-top: 3%;
+}
+
+footer .row {
+	margin: 0;
+	padding: 0;
+}
+
+.social_bar {
+	text-align: center;
+	padding: 0;
+}
+
+.social_bar a {
+	display: inline-block;
+	font-size: 1.5rem;
+}
+
+.social_bar a:link, .social_bar a:visited {
+	color: #6B6B6B;
+}
+
+#facebook:hover, #facebook:active {
+	color: #337ab7;
+	border: none;
+}
+
+#instagram:hover, #instagram:active {
+	color: #DA4453;
+	border: none;
+}
+
+#twitter:hover, #twitter:active {
+	color: #1dcaff;
+	border: none;
+}
+
+.site-info {
+	color: #fff;
+	float: right;
+	font-size: 1.2rem;
+	padding: 0.8rem 2rem 0 0;
+	margin: 0;
+}
+
+.site-info a {
+    color:#6B6B6B;
+	text-decoration: none;
+}
+
+.site-info a:hover{
+	color: #fff;
+}
+
+/*----------------------------------FOOTER-------------------------*/
+
